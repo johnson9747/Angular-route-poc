@@ -8,7 +8,7 @@ import { DataStoreService } from './data-store.service';
 })
 export class MainContentComponent implements OnInit {
 public items:string[];
-  constructor(private dataStoreService:DataStoreService) { }
+  constructor(public dataStoreService:DataStoreService) { }
 
   ngOnInit() {
     this.items=this.dataStoreService.items;

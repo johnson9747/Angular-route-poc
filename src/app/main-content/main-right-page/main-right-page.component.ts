@@ -8,7 +8,7 @@ import { DataStoreService } from '../data-store.service';
 })
 export class MainRightPageComponent implements OnInit {
 
-  constructor(private dataStoreService:DataStoreService) { }
+  constructor(public dataStoreService:DataStoreService) { }
 
   ngOnInit() {    
   }
