@@ -1,0 +1,35 @@
+.holder{
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 15px;
+    width: 30%;
+    height: 80vh;
+    background-color: yellow;
+    overflow-y: auto;;
+}
+.left h2{   
+    display: flex;
+    justify-content: left; 
+    border-radius: 2px;
+    border:solid red;
+    padding: 10px;
+    width: 100%;
+    background-color: black;
+    color: white;
+} 
+.right{  
+    flex-direction: column;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    width: 70%;
+    background-color: orange;
+    padding: 15px;
+}
