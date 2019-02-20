@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { DataStoreService } from '../data-store.service';
 
 @Component({
   selector: 'app-main-right-page',
@@ -6,10 +7,10 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./main-right-page.component.css']
 })
 export class MainRightPageComponent implements OnInit {
-@Input() selectedItem:string;
-  constructor() { }
 
-  ngOnInit() {
+  constructor(private dataStoreService:DataStoreService) { }
+
+  ngOnInit() {    
   }
 
 }
