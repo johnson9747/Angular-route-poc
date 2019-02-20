@@ -1,10 +1,9 @@
 <div class="holder">
     <div class="left">
-<h2 *ngFor="let item of items">{{item}}</h2>
+<h2 *ngFor="let item of items" (click)="onSelectItem(item)" [ngClass]="getSelectedClass(item)">{{item}}</h2>
 
     </div>
     <div class="right">
-            <h3>Main page</h3>
-            <p>This is the landing page for the app</p>
+            <app-main-right-page [selectedItem]="dataStoreService.selectedVal"></app-main-right-page>            
             </div>
         </div>

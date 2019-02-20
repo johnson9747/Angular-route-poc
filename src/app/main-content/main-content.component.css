@@ -23,12 +23,15 @@
     width: 100%;
     background-color: black;
     color: white;
+    cursor: pointer;
 } 
+
+.selected-item{
+    background-color: blue !important;
+}
 .right{  
     flex-direction: column;
     display: flex;
-    align-items:flex-start;
-    justify-content: center;
     width: 70%;
     background-color: orange;
     padding: 15px;

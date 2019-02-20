@@ -8,6 +8,7 @@ import { SectionTwoComponent } from './section-two/section-two.component';
 import { SectionThreeComponent } from './section-three/section-three.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { MainRightPageComponent } from './main-content/main-right-page/main-right-page.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     MainContentComponent,    
     SectionTwoComponent,
     SectionThreeComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    MainRightPageComponent
   ],
   imports: [
     BrowserModule,

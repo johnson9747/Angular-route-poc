@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataStoreService } from './data-store.service';
 
 @Component({
   selector: 'app-main-content',
@@ -7,10 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainContentComponent implements OnInit {
 public items:string[];
-  constructor() { }
+  constructor(private dataStoreService:DataStoreService) { }
 
   ngOnInit() {
-    this.items=["Item 1","Item 2","Item 3","Item 4"]
+    this.items=this.dataStoreService.items;
+  }
+  onSelectItem(item)
+  {
+    this.dataStoreService.selectedVal=item;
+  }
+  getSelectedClass(item)
+  {
+    if(item==this.dataStoreService.selectedVal)
+    return 'selected-item';
   }
 
 }
